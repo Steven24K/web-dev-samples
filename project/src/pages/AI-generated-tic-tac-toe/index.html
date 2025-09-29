@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Futuristic Tic Tac Toe — Generated with ChatGPT</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="prompt-banner">
+    <div class="prompt-inner">
+      <h2>Opdracht prompt (letterlijk):</h2>
+      <pre class="user-prompt">Maak met HTML, CSS and Typescript een Tic Tac Toe game zonder gebruik te maken van frameworks. Maak de styling over the top met animaties en een futuristisch thema. Maak een optie om tegen de computer te spelen met verschillende moeilijkheidsgraden. Hou ook in een local storage object bij van elk potje wat het eindresultaat is met scores. Gebruiker vs CPU. Daarnaast zet ook een disclaimer op de pagina dat deze game is gegenereerd met ChatGPT en een in dezelfde stijl als de ChatGPT website opdracht prompt bovenaan die letterlijk dit bericht toont met daaronder het eindresultaat. Genereer alles in losse HTML, TS en CSS bestanden.</pre>
+    </div>
+  </header>
+
+  <main class="app">
+    <section class="game-panel">
+      <h1>FUTURE-TTT</h1>
+      <div class="controls">
+        <label>Speler symbool
+          <select id="playerSymbol">
+            <option value="X">X</option>
+            <option value="O">O</option>
+          </select>
+        </label>
+        <label>Speel tegen
+          <select id="mode">
+            <option value="human">Mens vs Mens</option>
+            <option value="cpu">Gebruiker vs CPU</option>
+          </select>
+        </label>
+        <label id="difficultyLabel">Moeilijkheid
+          <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </label>
+        <button id="resetBtn">Reset bord</button>
+      </div>
+
+      <div id="board" class="board" aria-label="tic tac toe board"></div>
+
+      <div class="status">
+        <div id="currentTurn" class="turn">Beurt: <span id="turnPlayer">—</span></div>
+        <div id="result" class="result"></div>
+      </div>
+
+      <div class="scoreboard">
+        <h3>Scores</h3>
+        <div id="scores"></div>
+        <button id="clearHistory">Wis geschiedenis</button>
+      </div>
+    </section>
+
+    <aside class="disclaimer">
+      <h3>Disclaimer</h3>
+      <p>Deze game is gegenereerd met ChatGPT. De opdracht prompt staat bovenaan — het bovenste blok toont letterlijk de door jou ingevoerde opdracht, met daaronder het eindresultaat.</p>
+    </aside>
+  </main>
+
+  <footer class="credits">Generated with ❤️ by ChatGPT — futuristisch thema</footer>
+
+  <script src="app.ts" defer></script>
+</body>
+</html>
+
+
+
+
