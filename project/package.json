@@ -2,8 +2,9 @@
   "name": "project",
   "version": "1.0.0",
   "description": "Sample HTML project with Parcel development server",
+  "source": "src/index.html",
   "scripts": {
-    "start": "npx parcel ./src/index.html",
+    "start": "parcel",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Steven",
