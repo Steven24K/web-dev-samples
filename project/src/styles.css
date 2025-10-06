@@ -22,3 +22,250 @@
 .current {
     border-bottom: 2px solid red;
 }
+
+body {
+    background-color: #c0c0c0;
+    font-family: "MS Sans Serif", "Arial", sans-serif;
+    color: #000000;
+}
+
+.container {
+    width: 95%;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    padding: 15px;
+    box-shadow: 5px 5px 0px #808080;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Times New Roman", serif;
+    color: #000080;
+    text-align: center;
+}
+
+a {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #800080;
+}
+
+.button, button {
+    background-color: #c0c0c0;
+    border: 2px outset #ffffff;
+    box-shadow: 2px 2px 0px #808080;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.button:active, button:active {
+    border-style: inset;
+}
+
+.header {
+    background-color: #000080;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #000000;
+}
+
+.header h1 {
+    color: #ffffff;
+    margin: 0;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    color: #808080;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+.ttt-container {
+    background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+    border: 2px solid #000080;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0,0,128,0.08);
+    padding: 32px 24px;
+    margin: 32px auto;
+    max-width: 600px;
+}
+
+.ttt-title {
+    font-family: "Times New Roman", serif;
+    color: #000080;
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+}
+
+.ttt-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.ttt-controls label {
+    font-size: 1.1em;
+    color: #000080;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.ttt-select {
+    background: #f0f4ff;
+    border: 1px solid #000080;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 1em;
+    color: #000080;
+    margin-left: 6px;
+}
+
+.ttt-btn {
+    background: #c0c0c0;
+    border: 2px outset #ffffff;
+    box-shadow: 2px 2px 0px #808080;
+    font-weight: bold;
+    padding: 6px 16px;
+    border-radius: 4px;
+    color: #000080;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.ttt-btn:active {
+    border-style: inset;
+    background: #e0e7ff;
+}
+
+.ttt-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.ttt-status {
+    text-align: center;
+    font-size: 1.2em;
+    color: #000080;
+    margin-bottom: 16px;
+    font-weight: bold;
+    min-height: 1.5em;
+}
+
+.ttt-board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 8px;
+    justify-content: center;
+    margin: 0 auto 18px auto;
+}
+
+.ttt-cell {
+    background: #f0f4ff;
+    border: 2px solid #000080;
+    border-radius: 8px;
+    font-size: 2.5em;
+    color: #000080;
+    font-family: "MS Sans Serif", "Arial", sans-serif;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 1px 1px 0px #808080;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ttt-cell-filled {
+    background: #e0e7ff;
+    cursor: default;
+    color: #800080;
+}
+
+.ttt-cell:active:not(.ttt-cell-filled) {
+    background: #dbeafe;
+}
+
+.ttt-cell:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.ttt-scores {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 18px;
+}
+
+.ttt-score {
+    font-size: 1.1em;
+    color: #000080;
+    font-weight: bold;
+    background: #f0f4ff;
+    border-radius: 6px;
+    padding: 4px 12px;
+    border: 1px solid #000080;
+}
+
+.ttt-tutorial {
+    background: #f8fafc;
+    border: 1px solid #c0c0c0;
+    border-radius: 8px;
+    padding: 18px 16px;
+    margin-top: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,128,0.04);
+}
+
+.ttt-tutorial-title {
+    color: #000080;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.ttt-tutorial-list {
+    margin-left: 18px;
+    color: #222;
+    font-size: 1em;
+}
+
+.ttt-tutorial-list ul {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 18px;
+    font-size: 0.98em;
+    color: #444;
+}
