@@ -8,7 +8,7 @@ export const App: React.FC = () => {
     const [state, setState] = useState<AppState>(defaultAppState)
 
     return <div className="container">
-        <Header setPage={page =>setState({ ...state, page: page })} />
+        <Header setPage={page => setState({ ...state, page: page })} />
 
         <main className="main-content">
             <PageContent page={state.page} />
