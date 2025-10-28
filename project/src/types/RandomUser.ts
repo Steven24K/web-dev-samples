@@ -1,5 +1,5 @@
-export interface RandomUser {
-    results: Result[];
+export interface RandomUserApiResponse {
+    results: RandomUser[];
     info: Info;
 }
 
@@ -10,7 +10,7 @@ export interface Info {
     version: string;
 }
 
-export interface Result {
+export interface RandomUser {
     gender: Gender;
     name: Name;
     location: Location;
