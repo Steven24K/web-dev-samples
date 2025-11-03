@@ -13,6 +13,8 @@ export const Header: React.FC<HeaderProps> = props => {
         <nav>
             <ul className="nav-menu">
                 <li><button onClick={() => setPage('home')}>Home</button></li>
+                <li><button onClick={() => setPage('users-page')}>Users</button></li>
+                <li><button onClick={() => setPage('random-student-group')}>Demo time!</button></li>
                 <li><button onClick={() => setPage('about')}>About</button></li>
                 <li><button onClick={() => setPage('sample-page')}>Sample page</button></li>
                 <li><button onClick={() => setPage('article')}>Article</button></li>

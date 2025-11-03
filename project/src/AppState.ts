@@ -8,7 +8,9 @@ export type PageType = "home" |
     "article" |
     "sample-page" |
     "tic-tac-toe" |
-    "tic-tac-toe-ai"
+    "tic-tac-toe-ai" | 
+    "users-page" | 
+    "random-student-group"
 
 export const defaultAppState = (): AppState => ({
     page: 'home'
