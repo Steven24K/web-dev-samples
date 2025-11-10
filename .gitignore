@@ -4,3 +4,5 @@ dist
 obj
 Properties
 bin
+wwwroot/main.js
+wwwroot/main.js.map
