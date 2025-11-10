@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { AsyncState, FailedHttpResponse, HttpResponse, SuccessHttpResponse } from "./AsyncRenderer.types";
+import { AsyncState, HttpResponse } from "./AsyncRenderer.types";
 import { fulfilled, pending, rejected } from "./AsyncRenderer.utils";
 
 
@@ -16,7 +16,7 @@ export interface AsyncRendererProps<T> {
 export function AsyncRenderer<T>(props: AsyncRendererProps<T>) {
     const { asyncState, onFulfilled, retry, onLoaded, onError, onLoading, async } = props;
 
-    useEffect(() => {   
+    useEffect(() => {
         if (asyncState.kind === 'idle')
             onLoading(pending(async))
     }, [asyncState.kind]);
@@ -34,14 +34,8 @@ export function AsyncRenderer<T>(props: AsyncRendererProps<T>) {
     }, [asyncState.kind])
 
     return <>
-        {
-            asyncState.kind === 'idle' &&
-            <div>Idle...</div>
-        }
-        {
-            asyncState.kind === 'pending' &&
-            <span className="loader"></span>
-        }
+        {asyncState.kind === 'idle' && <div>Idle...</div>}
+        {asyncState.kind === 'pending' && <span className="loader"></span>}
         {
             asyncState.kind === 'rejected' &&
             <div className="error">
@@ -51,9 +45,6 @@ export function AsyncRenderer<T>(props: AsyncRendererProps<T>) {
                 </button>
             </div>
         }
-        {
-            asyncState.kind === 'fulfilled' &&
-            onFulfilled(asyncState.response.data)
-        }
+        {asyncState.kind === 'fulfilled' && onFulfilled(asyncState.response.data)}
     </>
 }

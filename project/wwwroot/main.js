@@ -20484,15 +20484,15 @@ function AsyncRenderer(props) {
                 children: "Idle..."
             }, void 0, false, {
                 fileName: "Frontend/components/AsyncRender/AsyncRenderer.layout.tsx",
-                lineNumber: 39,
-                columnNumber: 13
+                lineNumber: 37,
+                columnNumber: 40
             }, this),
             asyncState.kind === 'pending' && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                 className: "loader"
             }, void 0, false, {
                 fileName: "Frontend/components/AsyncRender/AsyncRenderer.layout.tsx",
-                lineNumber: 43,
-                columnNumber: 13
+                lineNumber: 38,
+                columnNumber: 43
             }, this),
             asyncState.kind === 'rejected' && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "error",
@@ -20507,7 +20507,7 @@ function AsyncRenderer(props) {
                         ]
                     }, void 0, true, {
                         fileName: "Frontend/components/AsyncRender/AsyncRenderer.layout.tsx",
-                        lineNumber: 48,
+                        lineNumber: 42,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -20515,13 +20515,13 @@ function AsyncRenderer(props) {
                         children: "Retry"
                     }, void 0, false, {
                         fileName: "Frontend/components/AsyncRender/AsyncRenderer.layout.tsx",
-                        lineNumber: 49,
+                        lineNumber: 43,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "Frontend/components/AsyncRender/AsyncRenderer.layout.tsx",
-                lineNumber: 47,
+                lineNumber: 41,
                 columnNumber: 13
             }, this),
             asyncState.kind === 'fulfilled' && onFulfilled(asyncState.response.data)
